@@ -7,11 +7,6 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QSystemTrayIcon, QMenu, QAction
 from pygame import mixer
 
-    
-
-
-
-
 
 class Timer: #Object for handling counting down and time.
 
@@ -52,6 +47,7 @@ class Timer: #Object for handling counting down and time.
     def time_out(self): #Plays selected alert file.
         mixer.music.play(100)
 
+
 class Window: #Object that handles the initialization of the "Set Time" window.
 
     def __init__(self): #Initializes time-setting window.
@@ -91,7 +87,6 @@ class Window: #Object that handles the initialization of the "Set Time" window.
         except: self.sec.set(0)
         master.withdraw()
 
-        
 
 class TaskBarIcon: #Object that handles the task bar icon and its functionality.
 
@@ -154,16 +149,6 @@ class TaskBarIcon: #Object that handles the task bar icon and its functionality.
             self.actions["Start"].setText("Pause")
         timer.pause()
         
-
-    
-    
-
-
-        
-
-
-        
-
 
 master = Tk() #Master window
 master.resizable(False, False)
