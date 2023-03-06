@@ -5,7 +5,8 @@ When right-clicked, will pop up a small menu that allows you to set time, start 
 
 You will need to provide your own alert file in the same directory as the executable, titled "alert.mp3"
 
-\\\\\DEPENDENCIES
+\\\\\DEPENDENCIES -
+
 sys
 os
 threading
